@@ -47,6 +47,33 @@
             height: auto;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
         }
+        .video iframe {
+            width: 640px;
+            height: 360px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .container {
+                margin: 20px auto;
+                padding: 10px;
+                width: 90%;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .gallery img {
+                max-width: 100%;
+                margin: 5px auto;
+            }
+
+            .video iframe {
+                width: 100%;
+                height: auto;
+            }
+        }
     </style>
 </head>
 <body>
@@ -69,10 +96,9 @@
         </div>
 
         <section class="video">
-            <h3>Making Of</h3>
+            <h3>Gameplay-Video</h3>
             <div style="text-align: center; margin: 20px;">
-                <iframe width="640" height="360" src="https://www.youtube.com/embed/farRDGjGUe8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/4fuMNKZkclI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </section>
     </div>

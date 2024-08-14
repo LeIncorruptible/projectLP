@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,19 +13,23 @@
             background-color: #f77f1e;
             color: #333;
         }
+
         nav {
             text-align: center;
             background-color: #333;
             padding: 10px;
         }
+
         nav a {
             margin: 0 15px;
             color: white;
             text-decoration: none;
         }
+
         nav a:hover {
             text-decoration: underline;
         }
+
         .container {
             max-width: 800px;
             margin: 50px auto;
@@ -33,13 +38,18 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
-        h1, h2, h3 {
+
+        h1,
+        h2,
+        h3 {
             color: #333;
         }
+
         p {
             font-size: 18px;
             line-height: 1.6;
         }
+
         .cta-button {
             display: inline-block;
             margin-top: 20px;
@@ -49,39 +59,51 @@
             text-decoration: none;
             border-radius: 5px;
         }
+
         .cta-button:hover {
             background-color: #218838;
         }
+
         footer {
             margin-top: 50px;
             font-size: 14px;
             color: #777;
         }
+
         img {
             max-width: 100%;
             height: auto;
         }
+
         .social-media img {
             width: 40px;
         }
+
         .developer-cats {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-gap: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
             margin-top: 20px;
+            gap: 20px;
+            /* Freiraum zwischen den Bildern */
         }
+
         .developer-cats .cat {
             text-align: center;
+            flex: 1;
+            margin: 0 10px;
         }
 
         .developer-cats img {
-            max-width: 30%;
+            max-width: 80%;
+            /* Bilder kleiner machen */
             height: auto;
             margin-bottom: 10px;
             display: block;
             margin-left: auto;
             margin-right: auto;
         }
+
         @media only screen and (max-width: 768px) {
             .container {
                 margin: 20px auto;
@@ -101,6 +123,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <nav>
@@ -109,11 +132,16 @@
     </nav>
 
     <div class="container">
-        <img src="img/Wort-Bild-Neu-Transparent.webp" alt="Crazy Cats Logo" style="display: block; margin: 0 auto; width: 200px;">
+        <img src="img/Wort-Bild-Neu-Transparent.webp" alt="Crazy Cats Logo"
+            style="display: block; margin: 0 auto; width: 200px;">
 
         <section>
             <h2>Lasst die KATERstrophe beginnen!</h2>
-            <p>Ein Team aus erst drei, später vier Studierenden des Studienganges Bachelor Media-Engineering an der Technischen Hochschule Nürnberg Ohm hat sich dazu entschlossen, ein von der Spielereihe „Worms“ (Team 17) inspiriertes online Multiplayer-Web-Spiel zu entwickeln. Dabei arbeiteten sie mit dem Framework „Phaser“, welches sich beim Programmieren von 2D-Games als sehr nützlich bewährt hat. Alle Grafiken in CrazyCats wurden vom Team selbst gezeichnet.</p>
+            <p>Ein Team aus erst drei, später vier Studierenden des Studienganges Bachelor Media-Engineering an der
+                Technischen Hochschule Nürnberg Ohm hat sich dazu entschlossen, ein von der Spielereihe „Worms“ (Team
+                17) inspiriertes online Multiplayer-Web-Spiel zu entwickeln. Dabei arbeiteten sie mit dem Framework
+                „Phaser“, welches sich beim Programmieren von 2D-Games als sehr nützlich bewährt hat. Alle Grafiken in
+                CrazyCats wurden vom Team selbst gezeichnet.</p>
 
             <h3>Die Entwickler-Katzen</h3>
             <div class="developer-cats">
@@ -134,32 +162,35 @@
                     <p><strong>Göki</strong><br>Unser Server-Programmier-Kater, neu adoptiert</p>
                 </div>
             </div>
-            </section>
+        </section>
 
-            <section>
-                <h3>Entstehung</h3>
-                <p>
-                    Da wir ein Spiel schaffen wollten, das allen von uns gefällt, suchten wir nach
-                    einem gemeinsamen Interesse und wurden fündig: Katzen. Wer mag sie nicht,
-                    diese geheimnisvollen, flauschigen Wesen? In einem Moment niedlich, im
-                    nächsten zerstören sie etwas. Diese Einstellung wollten wir auch unserem Spiel
-                    geben. Stets im süßen, bunten Stil gehalten und doch Action und Explosionen.
-                </p>
-                <p>
-                    Als Erstes programmierten wir das Grundkonzept und hatten viel
-                    Gestaltungsarbeit, an der jedes Teammitglied teilgenommen hat. Später trafen
-                    auf uns Herausforderungen, wie das Spiel pixelbasiert zu machen, die
-                    Spieleumgebung zerstörbar zu machen, das Phasensystem, weil das Game
-                    rundenbasiert ist, und natürlich, das Ganze online zu machen. Wir danken
-                    vielmals unserem Professor Hopf, der uns geduldig und lehrreich unterstützt
-                    hat!
-                </p>
-            </section>
+        <section>
+            <h3>Entstehung</h3>
+            <p>
+                Da wir ein Spiel schaffen wollten, das allen von uns gefällt, suchten wir nach
+                einem gemeinsamen Interesse und wurden fündig: Katzen. Wer mag sie nicht,
+                diese geheimnisvollen, flauschigen Wesen? In einem Moment niedlich, im
+                nächsten zerstören sie etwas. Diese Einstellung wollten wir auch unserem Spiel
+                geben. Stets im süßen, bunten Stil gehalten und doch Action und Explosionen.
+            </p>
+            <p>
+                Als Erstes programmierten wir das Grundkonzept und hatten viel
+                Gestaltungsarbeit, an der jedes Teammitglied teilgenommen hat. Später trafen
+                auf uns Herausforderungen, wie das Spiel pixelbasiert zu machen, die
+                Spieleumgebung zerstörbar zu machen, das Phasensystem, weil das Game
+                rundenbasiert ist, und natürlich, das Ganze online zu machen. Wir danken
+                vielmals unserem Professor Hopf, der uns geduldig und lehrreich unterstützt
+                hat!
+            </p>
+        </section>
 
         <section>
             <h3>Steuerung</h3>
-            <p>Laufen und Springen Sie mit den Pfeiltasten oder W/A/D. Wechseln Sie die Waffe mit der Pfeiltaste nach unten oder S. Zielen Sie durch Bewegen der Maus und schießen Sie mit einem Mausklick oder mithilfe der Leertaste. Hierbei reguliert die Druckdauer je nach Waffe die Stärke oder Länge des Schusses.</p>
-            <img src="img/27-07-2024_3.png" alt="Gameplay Screenshot" style="display: block; margin: 20px auto; max-width: 100%; height: auto;">
+            <p>Laufen und Springen Sie mit den Pfeiltasten oder W/A/D. Wechseln Sie die Waffe mit der Pfeiltaste nach
+                unten oder S. Zielen Sie durch Bewegen der Maus und schießen Sie mit einem Mausklick oder mithilfe der
+                Leertaste. Hierbei reguliert die Druckdauer je nach Waffe die Stärke oder Länge des Schusses.</p>
+            <img src="img/27-07-2024_3.png" alt="Gameplay Screenshot"
+                style="display: block; margin: 20px auto; max-width: 100%; height: auto;">
         </section>
 
         <section class="social-media">
@@ -168,7 +199,8 @@
             <a href="https://www.instagram.com/crazycatsgame/" target="_blank">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
             </a>
-            <img src="img/PlakatNeu.png" alt="Crazy Cats Plakat" style="display: block; margin: 20px auto; width: 400px; height: auto;">
+            <img src="img/PlakatNeu.png" alt="Crazy Cats Plakat"
+                style="display: block; margin: 20px auto; width: 400px; height: auto;">
         </section>
 
         <footer>
@@ -177,4 +209,5 @@
     </div>
 
 </body>
+
 </html>

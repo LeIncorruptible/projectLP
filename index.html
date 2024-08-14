@@ -64,7 +64,24 @@
         .social-media img {
             width: 40px;
         }
+        .developer-cats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+            margin-top: 20px;
+        }
+        .developer-cats .cat {
+            text-align: center;
+        }
 
+        .developer-cats img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
         @media only screen and (max-width: 768px) {
             .container {
                 margin: 20px auto;
@@ -98,25 +115,25 @@
             <h2>Lasst die KATERstrophe beginnen!</h2>
             <p>Ein Team aus erst drei, später vier Studierenden des Studienganges Bachelor Media-Engineering an der Technischen Hochschule Nürnberg Ohm hat sich dazu entschlossen, ein von der Spielereihe „Worms“ (Team 17) inspiriertes online Multiplayer-Web-Spiel zu entwickeln. Dabei arbeiteten sie mit dem Framework „Phaser“, welches sich beim Programmieren von 2D-Games als sehr nützlich bewährt hat. Alle Grafiken in CrazyCats wurden vom Team selbst gezeichnet.</p>
 
-                <h3>Die Entwickler-Katzen</h3>
-                <div style="display: flex; justify-content: space-around; align-items: center;">
-                    <div style="text-align: center;">
-                        <img src="img/blackcat.jpg" alt="Laura" style="width: 100px;">
-                        <p><strong>Laura</strong><br>Diese Mieze bin ich: Ein nerviger Mini-Boss</p>
-                    </div>
-                    <div style="text-align: center;">
-                        <img src="img/orangecat.jpg" alt="Sarah" style="width: 100px;">
-                        <p><strong>Sarah</strong><br>Unser nettes Programmiertalent-Kätzchen</p>
-                    </div>
-                    <div style="text-align: center;">
-                        <img src="img/uglycat.jpg" alt="Isabella" style="width: 100px;">
-                        <p><strong>Isabella</strong><br>Die Design-Talent und Entwickler-Katze</p>
-                    </div>
-                    <div style="text-align: center;">
-                        <img src="img/whitecat.jpg" alt="Göki" style="width: 100px;">
-                        <p><strong>Göki</strong><br>Unser Server-Programmier-Kater, neu adoptiert</p>
-                    </div>
+            <h3>Die Entwickler-Katzen</h3>
+            <div class="developer-cats">
+                <div class="cat">
+                    <img src="img/blackcat.jpg" alt="Laura">
+                    <p><strong>Laura</strong><br>Diese Mieze bin ich: Ein nerviger Mini-Boss</p>
                 </div>
+                <div class="cat">
+                    <img src="img/orangecat.jpg" alt="Sarah">
+                    <p><strong>Sarah</strong><br>Unser nettes Programmiertalent-Kätzchen</p>
+                </div>
+                <div class="cat">
+                    <img src="img/uglycat.jpg" alt="Isabella">
+                    <p><strong>Isabella</strong><br>Die Design-Talent und Entwickler-Katze</p>
+                </div>
+                <div class="cat">
+                    <img src="img/whitecat.jpg" alt="Göki">
+                    <p><strong>Göki</strong><br>Unser Server-Programmier-Kater, neu adoptiert</p>
+                </div>
+            </div>
             </section>
 
             <section>
